@@ -35,7 +35,7 @@ const Slide = ({ slideNumber }) => {
         </div>
         <div className="image-box">
           <img src={images.fish2mesh} alt="Fish2mesh" className="slide-image" />
-          <p className="caption">Fish2mesh</p>
+          <p className="caption">Fish2Mesh</p>
         </div>
       </div>
 
@@ -43,15 +43,15 @@ const Slide = ({ slideNumber }) => {
       <div className="image-row row-three">
         <div className="image-box">
           <img src={images.fourdhuman} alt="4D Human" className="slide-image" />
-          <p className="caption">4D Human</p>
+          <p className="caption">4DHuman</p>
         </div>
         <div className="image-box">
-          <img src={images.egohmr} alt="FishVIT" className="slide-image" />
-          <p className="caption">FishVIT</p>
+          <img src={images.egohmr} alt="FishViT" className="slide-image" />
+          <p className="caption">EgoHMR</p>
         </div>
         <div className="image-box">
           <img src={images.fishvit} alt="Egohmr" className="slide-image" />
-          <p className="caption">Egohmr</p>
+          <p className="caption">FishViT</p>
         </div>
       </div>
     </div>

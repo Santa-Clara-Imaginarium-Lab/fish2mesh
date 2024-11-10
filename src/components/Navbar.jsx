@@ -27,6 +27,7 @@ const Navbar = () => {
           <li><a href="#abstract" onClick={toggleMenu}>Abstract</a></li>
           <li><a href="#overview" onClick={toggleMenu}>Overview</a></li>
           <li><a href="#results" onClick={toggleMenu}>Results</a></li>
+          <li><a href="#demos" onClick={toggleMenu}>Demos</a></li>
           <li><a href="#acknowledgement" onClick={toggleMenu}>Acknowledgement</a></li>
           <li><a href="#citations" onClick={toggleMenu}>Citations</a></li>
         </ul>

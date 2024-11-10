@@ -1,12 +1,21 @@
+/* Slide container */
 .slide-container {
-  max-width: 1000px;
-  margin: auto;
-  padding: 10px;
+  width: 100%;
+  height: 100%;
+  margin: 0;
+  padding: 0;
   display: flex;
   flex-direction: column;
+  justify-content: center;
   transition: all 0.3s ease;
 }
 
+/* Reset margin and padding for all elements inside */
+.slide-container * {
+  margin: 0;
+  padding: 0;
+  line-height: 1;
+}
 /* Row 1 styles */
 .row-one {
   display: flex;

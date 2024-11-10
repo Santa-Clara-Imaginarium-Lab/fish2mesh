@@ -46,7 +46,7 @@ const Slide2 = ({ slideNumber }) => {
         </div>
         <div className="media-box">
           <img src={media.image2} alt="Image 2" className="slide2-image" />
-          <p className="caption">Third Person View</p>
+          <p className="caption">3rd Person View</p>
         </div>
         <div className="media-box">
           <img src={media.image3} alt="Image 3" className="slide2-image" />

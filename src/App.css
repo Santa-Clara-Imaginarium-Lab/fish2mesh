@@ -26,12 +26,10 @@ body {
   margin: 0px;
 }
 #results .title {  
-  padding-bottom: 0px;
   margin: 0px;
 }
 
 #demos .title {  
-  padding-bottom: 0px;
   margin: 0px;
 }
 
@@ -157,8 +155,8 @@ main {
 
 
 .abstract-content, .overview-content {
-  padding-left: 5%;
-  padding-right: 5%;
+  padding-left: 10%;
+  padding-right: 10%;
   text-align: justify;
 }
 
@@ -167,6 +165,14 @@ main {
   max-width: 1130px;
   margin: 0 auto;
   display: block;
+}
+
+
+@media (min-width: 1600px) {
+  .abstract-content, .overview-content {
+    padding-left: 28%;
+    padding-right: 28%;
+  }
 }
 
 @media (max-width: 480px) {
@@ -198,17 +204,17 @@ main {
     padding-bottom: 0px;
   }
 
-  #results .title {
-    padding-top: 30px;  
-    padding-bottom: 0px;
-    margin: 0px;
-  }
+  #abstract .title,
+#overview .title,
+#results .title,
+#demos .title,
+#acknowledgement .title,
+#citations .title {
+  padding-top: 60px;  
+  padding-bottom: 10px;
+  margin: 0px;
+}
 
-  #demos .title {
-    padding-top: 30px;  
-    padding-bottom: 0px;
-    margin: 0px;
-  }
 
   .video-container {
     width: 100%;
@@ -219,3 +225,5 @@ main {
     height: 220px;
   }
 }
+
+

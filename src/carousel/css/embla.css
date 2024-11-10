@@ -1,31 +1,38 @@
+/* Embla base container */
 .embla {
-  width: 100%; /* Make embla container take up the full viewport width */
+  width: 100%; /* Full width */
   margin: 0 auto;
-  padding: 0; 
-}
-
-.embla__viewport {
-  overflow: hidden;
-  width: 100%; /* Ensure viewport takes full width of container */
   padding: 0;
 }
 
+/* Embla viewport */
+.embla__viewport {
+  overflow: hidden;
+  width: 100%; /* Full width */
+  padding: 0;
+  height: 100%; /* Full height */
+}
+
+/* Embla container */
 .embla__container {
   display: flex;
   touch-action: pan-y pinch-zoom;
-  margin-left: 0; /* Remove left margin */
-  padding: 0;
+  margin-left: 0;
+  padding: 0px;
+  height: 100%; /* Full height */
 }
 
+/* Each slide */
 .embla__slide {
-  flex: 0 0 100%; /* Make each slide take up 100% of the viewport width */
+  flex: 0 0 100%; /* Full width of viewport */
   display: flex;
   justify-content: center;
-  align-items: center;
+  align-items: stretch;
   padding: 0;
   box-sizing: border-box;
-  height: auto;
+  min-height: 100%; /* Ensure it takes full height */
 }
+
 
 .embla__slide__img {
   width: 100%; /* Image will take the full width of the slide */
@@ -117,9 +124,20 @@
   box-shadow: inset 0 0 0 0.2rem var(--text-body);
 }
 
-@media (max-width: 756px) {
+/* Responsive adjustments */
+@media (max-width: 768px) {
   .embla__controls {
     padding-left: 12%;
     padding-right: 12%;
+  }
+  .embla {
+    height: 500px; /* Auto height in responsive mode */
+  }
+}
+
+@media (max-width: 400px) {
+  /* Control embla height in responsive view */
+  .embla {
+    height: 400px; /* Auto height in responsive mode */
   }
 }

@@ -8,6 +8,7 @@ import {
 import useEmblaCarousel from 'embla-carousel-react'
 import Slide2 from '../../slides/Slide2'
 
+
 const EmblaCarousel = (props) => {
   const { slides, options } = props
   const [emblaRef, emblaApi] = useEmblaCarousel(options)

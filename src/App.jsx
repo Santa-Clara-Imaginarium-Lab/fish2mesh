@@ -4,13 +4,15 @@ import './App.css';
 import Navbar from './components/Navbar';
 import github from './assets/github.svg';
 import pdf from './assets/pdf.svg';
-import { ABSTRACT, OVERVIEW, OVERVIEW_DETAIL } from './constants';
+import { ABSTRACT, OVERVIEW_DETAIL } from './constants';
 
 import './carousel/css/base.css';
 import './carousel/css/embla.css';
 import './carousel/css/sandbox.css';
 import EmblaCarousel from './carousel/js/EmblaCarousel';
 import EmblaCarousel2 from './carousel/js/EmblaCarousel2';
+
+import overviewImage from './assets/frame.svg';
 
 // Carousel settings
 const OPTIONS = {dragFree: true, loop: true};
@@ -30,7 +32,7 @@ const App = () => {
           <h2  className="main-title">Fish2Mesh Transformer:</h2>
           <h2 className="title">3D Human Mesh Reconstruction from Egocentric Vision</h2>
 
-          {/* Logo and Links */}
+          {/* Logo and Links
           <div className="icon-links">
             <a href="/path/to/pdf" target="_blank" rel="noopener noreferrer" className="icon-link">
               <img src={pdf} alt="PDF Icon" className="icon" />
@@ -38,7 +40,7 @@ const App = () => {
             <a href="https://github.com/Santa-Clara-Imaginarium-Lab/Fish2Mesh-Human-Mesh-Recovery" target="_blank" rel="noopener noreferrer" className="icon-link">
               <img src={github} alt="GitHub Icon" className="icon" />
             </a>
-          </div>
+          </div> */}
 
           {/* Video Embed */}
           <div className="video-container">
@@ -64,7 +66,7 @@ const App = () => {
           <h2 className="title">Overview</h2>
           <div className="overview_img">
             <img
-              src="Fish2Mesh.png"
+              src={overviewImage}
               alt="Overview Illustration"
               style={{ width: '100%', height: 'auto', marginBottom: '10px' }}
             />
